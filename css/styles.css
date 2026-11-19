@@ -1,0 +1,167 @@
+/* --- BASE --- */
+
+:root {
+  --background: #111111;
+  --surface: rgba(27, 27, 27, 0.88);
+  --surface-hover: #242424;
+  --text: #e5e5e5;
+  --text-muted: #a0a0a0;
+  --accent-dark: #5c1725;
+  --accent: #8b2635;
+  --accent-hover: #b33749;
+  --accent-light: #d9a0a7;
+  --border: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  background-image: 
+    linear-gradient(
+      rgba(17, 17, 17, 0.75),
+      rgba(17, 17, 17, 0.85)
+    ),
+    url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* --- HEADER --- */
+
+.site-header {
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem 3rem;
+}
+
+.site-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+.nav-link {
+  display: inline-block;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: 
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-hover);
+  transform: scale(1.08)
+}
+
+.nav-link[aria-current="page"] {
+  color: var(--text);
+  position: relative;
+}
+
+.nav-link[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent);
+}
+
+.page-title {
+  max-width: 1100px;
+  margin: 3rem auto 0;
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+/* --- FOOTER --- */
+
+.site-footer {
+  background-color: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 2rem;
+  text-align: center;
+}
+
+.site-footer p {
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-light);
+}
+
+/* --- EXTRA --- */
+
+a:focus-visible {
+  outline: 2px solid var(--accent-hover);
+  outline-offset: 4px;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* --- RESPONSIVE WEB DESIGN --- */
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 1rem 1rem 1rem;
+  } 
+
+  .nav-list {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .site-footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-links {
+    gap: 1rem;
+  }
+}

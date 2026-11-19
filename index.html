@@ -4,9 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome! - OlafVT</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index_styles.css">
   </head>
   <body>
-    <p>Welcome! This is currently still in development</p>
+    <header class="site-header">
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="pages/cv.html" class="nav-link">CV</a>
+          </li>
+          <li>
+            <a href="pages/gallery.html" class="nav-link">Image Gallery</a>
+          </li>
+          <li>
+            <a href="#footer"class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="page-title">Welcome to my website!</h1>
+    </header>
+    <main class="main-content">
+      <article class="intro-article">
+        <section class="content-section" id="about">
+          <h2>About me</h2>
+          <p>
+            Hello! I am Olaf, a 1st year student of Applied Computer Science at
+            UCLL based in Belgium. In my spare time, I enjoy gaming, Kendo, and
+            stargazing.
+          </p>
+        </section>
+        <section class="content-section" id="kendo">
+          <h2>Kendo</h2>
+          <p>
+            I am a Nidan (2nd blackbelt) in kendo. I have been practicing for 12
+            years, ever since I was a kid. What started as a trial to keep
+            myself busy has grown into something important in my life.
+          </p>
+          <div class="image-container">
+            <img
+              src="images/2014-11-12-Kendo.jpeg"
+              alt="Image of my first kendo tournament"*
+              class="content-image"
+            />
+          </div>
+        </section>
+        <section class="content-section" id="stargazing">
+          <h2>Stargazing</h2>
+          <p>
+            I have been making images of the stars for 3+ years with my phone
+            and telescope. In 2026, I bought a smart telescope in order to make
+            better images. You can find them in the image gallery!
+          </p>
+          <div class="image-container">
+            <img
+              src="images/2026-10-30-M31.jpeg"
+              alt="image of the Andromeda Galaxy"
+              class="content-image"
+            />
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="site-footer" id="footer">
+      <p>&copy; Olaf van Tichelen - 2026</p>
+      <ul class="footer-links">
+        <li>
+          <a href="mailto:olaf.vantichelen@student.ucll.be">Email</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/olaf-van-tichelen-763077222/"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://discord.com/users/849354463617089578">Discord</a>
+        </li>
+        <li>
+          <a href="https://github.com/OlafVT">GitHub</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

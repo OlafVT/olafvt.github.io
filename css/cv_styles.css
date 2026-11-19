@@ -1,0 +1,20 @@
+.update {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: var(--text);
+  font-size: 1.1rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: 
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
