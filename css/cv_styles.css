@@ -2,7 +2,7 @@
   max-width: 900px;
   margin: 0 auto 2rem;
   text-align: center;
-  color: var(--text);
+  color: var(--accent-light);
   font-size: 1.1rem;
   background-color: var(--surface);
   border: 1px solid var(--border);
@@ -17,4 +17,8 @@ main {
   max-width: 1500px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+span {
+  color: var(--accent)
 }
